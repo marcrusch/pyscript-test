@@ -1,5 +1,10 @@
-def App():
-    print('App')
+from datetime import datetime
+import asyncio
 
 
-App()
+async def foo():
+    while True:
+        await asyncio.sleep(1)
+        pyscript.write("timeOutput", datetime.now().strftime('%H:%M:%S'))
+
+pyscript.run_until_complete(foo())

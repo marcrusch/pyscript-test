@@ -3,14 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>A Basic HTML5 Template</title>
-        <meta name="description" content="A simple HTML5 Template for new projects.">
-        <meta name="author" content="SitePoint">
+        <title>PyScript-Test</title>
+        <meta name="description" content="PyScript-Test">
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - paths:
+                - /src/app.py
+        </py-env>
     </head>
     <body>
-        <py-script src="src/App.py">
+        <div class="time"><span>Current Time: </span><span id="timeOutput"></span></div>
+        <py-script src="src/app.py">
         </py-script>
     </body>
 </html>
